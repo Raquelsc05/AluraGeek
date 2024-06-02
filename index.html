@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+
+  <title>AluraGeek</title>
+</head>
+<body>
+  <header id="header">
+   <img class="logo-coracoes" src="./images/image 1.png" alt="logo de tres coracoes" ><h1>AluraGeek</h1>
+  </header>
+
+  <main>
+  <section class="container__products">
+   <h1 class="container-product">MEUS PRODUTOS:</h1> 
+   <div id="painel" data-product>
+ 
+  
+</div>
+ </section>
+
+      <section class="form__add">
+      <h1 class="container-add-products">ADICIONAR PRODUTO: </h1>
+      <form class="formulario" id="formulario" target="blank" data-form>
+        <div class="add-products">
+       
+        <input data-name  type="text" id="campo__nome"  placeholder="  Nome... " required />
+        <input data-price  type="text" id="campo__valor" placeholder="  Valor... "  required />
+        <input data-image  type="text" id="campo__imagem" placeholder=" Imagem..."  required />
+      </div>
+     
+      </div>
+      <div class="button">
+        <button class="guardar" id="guardar" type="submit">Guardar</button>
+        <button class="limpar" id="limpar" type="reset" >Limpar</button>
+      </div>
+      </form>
+    
+      </section>
+
+  </main>
+  <footer>
+    <div class="logo-coracoes">
+    <img  src="./images/image 1.png" alt="logo de tres coracoes" >
+    <h1>AluraGeek</h1>
+  </div>
+   <div class="desenvolvimento">
+    <p>Desenvolvido por Raquel Costa</p> 
+    <p>Alura LATAM 2024</p>
+  </div>
+  </footer>
+  <script type="module" src="js/controller/main.js"></script>
+</body>
+</html>

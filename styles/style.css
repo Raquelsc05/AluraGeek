@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: #2d033b;
+  --main-second-color: #810ca8;
+  --main-third-color: #c147e9;
+  --main-primary-color: #e5b8f4;
+  --main-letter-header: #e5e5e5;
+
+  --font-press: 'Press Start 2P', sans-serif;
+  --font-IBM: 'IBM Plex Mono', sans-serif;
+
+ 
+  font-size: 62.5%; // 1rem = 10px
+}
+
+
+html,
+body {
+  height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+
+ 
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  height: 96px;
+  width: auto;
+}
+
+.logo-coracoes {
+  height: 56px;
+}
+
+#header h1 {
+  color: var(--main-letter-header);
+  font-family: var(--font-press);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+/* MAIN */
+
+main {
+ display: flex;
+  margin-top: 5rem;
+  margin-inline: 2rem;
+  gap: 7rem;
+  margin-inline: auto;
+
+ 
+  
+
+}
+.container__products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-inline: auto;
+  margin-bottom: 6rem;
+
+ padding: 4rem;
+}
+
+.container-product {
+  font-family: var(--font-press);
+  font-weight: 400;
+  font-size: 2.4rem;
+
+  margin: 40px 40px 40px 40px;
+}
+
+#painel {
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    padding: 1.5rem;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 0 1em gray;
+    height: 100%;
+   
+    margin-bottom: 5rem;
+   
+}
+
+
+.imagem {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 196px;
+
+
+  background-color: var(--main-second-color);
+  
+  padding: 1rem;
+  
+    margin-top: 1.5rem;
+    margin-inline: 1rem;
+    
+
+  border: 3px solid black; 
+  border-radius: 2.5rem;
+  
+
+ 
+}
+
+.card img {
+ 
+  width: 176px;
+  height: 174px;
+  border: 3px solid black;
+  border-radius: .5rem;
+
+}
+
+.card-container--info {
+  display: flex;
+  flex-direction: column;
+ 
+  padding: 1rem;
+
+  font-family: var(--font-IBM);
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: var(--main-letter-header);
+  align-items: flex-start;
+  
+}
+
+.card-container--value {
+
+
+  font-family: var(--font-IBM);
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--main-letter-header);
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  width: 176px;
+  margin-top: 4rem;
+  padding: 1rem;
+   margin-top: 1rem;
+ 
+  
+}
+.card-container--value img {
+ 
+  width:24px;
+  height: 24px;
+  border: none;
+  cursor: pointer; 
+}
+
+.form_add {
+  margin-top: 6rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.container-add-products {
+  margin-top: 7.5rem;
+  margin-bottom: 4rem;
+  margin-inline: 4rem;
+
+  font-family: var(--font-press);
+  font-weight: 400;
+  font-size: 2.4rem;
+  justify-items: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+}
+
+.add-products {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#campo__nome,
+#campo__valor,
+#campo__imagem {
+
+  width: 188pxpx;
+  height: 58px;
+  color: var(--main-bg-color);
+  background-color: var(--main-primary-color);
+  border-radius: 10rem;
+
+  font-family: var(--font-IBM);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  border: 3px solid var(--main-third-color);
+ 
+}
+.delete-button{
+  background-color: var(--main-second-color);
+  borde: 0.5px solid var(--main-third-color);
+}
+
+.button {
+  display: flex;
+
+  flex-direction: row;
+  gap: 1.3rem;
+
+  transition-duration: 0.4s;
+
+
+
+}
+
+#guardar {
+  width: 188px;
+  height: 55px;
+  border-radius: 1.5rem;
+
+  font-family: var(--font-IBM);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-third-color);
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-third-color);
+
+  cursor: pointer; 
+}
+
+#limpar {
+  width: 188px;
+  height: 55px;
+  border-radius: 1.5rem;
+
+  font-family: var(--font-IBM);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-bg-color);
+  background-color: white;
+  border: 3px solid var(--main-bg-color);
+
+  cursor: pointer; 
+}
+
+.guardar:hover {
+  color: var(--main-third-color);
+  background-color: var(--main-second-color);
+  border: 3px solid var(--main-bg-color);
+}
+
+.limpar:hover {
+  color: var(--main-primary-color);
+  background-color: var(--main-third-color);
+  border: 3px solid var(--main-bg-color);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  height: 232px;
+  margin-top: 5rem;
+  width: auto;
+
+} 
+
+.logo-coracoes {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-coracoes h1 {
+  color: var(--main-letter-header);
+  font-family: var(--font-press);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.desenvolvimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: var(--font-IBM);
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--main-third-color);
+}
+
+/*  RESPONSIVO */
+
+@media screen and (max-width: 1295px){
+main {
+  gap: 1rem;
+}
+}
+
+@media screen and (max-width: 768px){
+
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 506px){
+
+
+  .container-add-products {
+   
+   margin-inline: 1rem;
+}
+}
+@media screen and(max-width: 451px){
+
+  .container-add-products {
+    margin-inline:auto;
+   
+}
+
+.form_add {
+ 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+
+.container-product {  
+margin-inline: auto;
+width: 300px;
+font-size: 1.8rem;
+}
+.button {
+width: 250px;
+
+
+}
+
+
+}
+
+@media screen and(max-width: 360px){
+  form_add{
+    width: 360px;
+  }
+
+  #campo__nome,
+#campo__valor,
+#campo__imagem{
+  width: 300px;
+}
+
+.button {
+  width: 250px;
+}
+}
+
+
+
+
