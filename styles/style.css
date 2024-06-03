@@ -209,7 +209,7 @@ main {
 #campo__valor,
 #campo__imagem {
 
-  width: 188pxpx;
+  width: 320px;
   height: 58px;
   color: var(--main-bg-color);
   background-color: var(--main-primary-color);
