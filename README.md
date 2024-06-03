@@ -1,7 +1,7 @@
 # Projeto AluraGeek 
 
-Desesnvolvido como parte do curso Oracle Next Education da Alura junto com a Oracle.
-E-commerce onde os usuraios podem colocar seus produtos e exclui-los.
+Desenvolvido como parte do curso Oracle Next Education da Alura junto com a Oracle.
+E-commerce onde os usuarios podem colocar seus produtos e exclui-los.
 
 - Utilização do CRUD
 
