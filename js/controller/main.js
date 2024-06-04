@@ -8,6 +8,7 @@ const form = document.querySelector("[data-form]");
 
 
 
+
 function createElement(name, price, image, id){
   const card = document.createElement("div")
   card.classList.add("card")
