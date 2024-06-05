@@ -1,11 +1,11 @@
 const productList = () => {
-  return fetch("https://665fd5975425580055b10a9b.mockapi.io/api/v1/:products")
+  return fetch("https://665fd5975425580055b10a9b.mockapi.io/api/v1/products")
   .then((res) => res.json())
   .catch((err) => console.log(err));
 };
 
 const createProduct = (name, price, image) => {
-  return fetch("https://665fd5975425580055b10a9b.mockapi.io/api/v1/:products",{
+  return fetch("https://665fd5975425580055b10a9b.mockapi.io/api/v1/products",{
     method: "POST",
     headers:{
       "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const createProduct = (name, price, image) => {
 };
 
  async function deleteProduct(id) {
-  const url = `https://665fd5975425580055b10a9b.mockapi.io/api/v1/:products/${id}`;
+  const url = `https://665fd5975425580055b10a9b.mockapi.io/api/v1/products/${id}`;
   try {
     const resposta = await fetch(url, {
       method: "DELETE",
