@@ -1,11 +1,11 @@
 const productList = () => {
-  return fetch("http://localhost:3000/products")
+  return fetch("https://665fa9575425580055b06643.mockapi.io/api/v1/:products")
   .then((res) => res.json())
   .catch((err) => console.log(err));
 };
 
 const createProduct = (name, price, image) => {
-  return fetch("http://localhost:3000/products",{
+  return fetch("https://665fa9575425580055b06643.mockapi.io/api/v1/:products",{
     method: "POST",
     headers:{
       "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const createProduct = (name, price, image) => {
 };
 
  async function deleteProduct(id) {
-  const url = `http://localhost:3000/products/${id}`;
+  const url = `https://665fa9575425580055b06643.mockapi.io/api/v1/:products/${id}`;
   try {
     const resposta = await fetch(url, {
       method: "DELETE",
